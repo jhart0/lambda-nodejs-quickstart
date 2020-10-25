@@ -1,0 +1,10 @@
+build:
+  script:
+    - npm i
+    - npm run build
+
+test:
+  script:
+    - npm i
+    - npm run lint-ci
+
