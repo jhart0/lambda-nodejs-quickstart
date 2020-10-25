@@ -1,9 +1,17 @@
+stages:
+  - build
+  - test
+
+image: node:latest
+
 build:
+  stage: build
   script:
     - npm i
     - npm run build
 
 test:
+  stage: test
   script:
     - npm i
     - npm run lint-ci
